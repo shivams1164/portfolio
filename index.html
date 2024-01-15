@@ -2,211 +2,293 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Shivam's Portfolio</title>
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Favicon -->
+  <link id='favicon' rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-png">
+  <title>Portfolio | Shivam Singh</title>
 </head>
 
-<body>
-    <div class="hero">
-        <nav>
-            <img src="vishaly.jpg" height="100" alt="">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#about-setion">About</a></li>
-                <li><a href="#Skill-section">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <!-- <li><a href="#">Hire Me</a></li> -->
-            </ul>
-        </nav>
-        <div class="detail">
-            <h1>I am Shivam <span>Singh</span> </h1>
-            <p>This is my official portfolio website to showes all
-                <br>Details and work exprins web devlopment
-            </p>
-            <a href="resume.png" download class="download-cv">Download CV </a>
-        </div>
-        <div class="social">
-            <a href="https://www.github.com/shivams1164" target="_blank"><i class="fa fa-github"></i></a>
-            <a href="https://www.instagram.com/shivams_16" target="instagram"><i class="fa fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/shivams16/"
-                target="_blank"><i class="fa fa-linkedin"></i></a>
+<body oncontextmenu="return false">
 
-                <a href="https://wa.me/919140797852" target="whatsapp"><i class="fa fa-whatsapp"></i></a>
-            </div>
-            <div class="images">
-            <img style="border: 2px solid rgb(197, 185, 185);" src="photo.jpg" width="400" height="500" alt="">
-            <!-- <img src="download.jpeg" class="shape"> -->
-            <!-- <img src="#" class="boy"> -->
-        </div>
+  <!-- pre loader -->
+  <!-- <div class="loader-container">
+  <img draggable="false" src="./assets/images/preloader.gif" alt="">
+</div> -->
+
+  <!-- navbar starts -->
+  <header>
+    <a href="/" class="logo"><i class="fab fa-node-js"></i> Shivam</a>
+
+    <div id="menu" class="fas fa-bars"></div>
+    <nav class="navbar">
+      <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- navbar ends -->
+
+
+  <!-- hero section starts -->
+  <section class="home" id="home">
+    <div id="particles-js"></div>
+
+    <div class="content">
+      <h2>Hi There,<br /> I'm Shivam <span>Singh</span></h2>
+      <p>i am into <span class="typing-text"></span></p>
+      <a href="#about" class="btn"><span>About Me</span>
+        <i class="fas fa-arrow-circle-down"></i>
+      </a>
+      <div class="socials">
+        <ul class="social-icons">
+          <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/shivams16/" target="_blank"><i
+                class="fab fa-linkedin"></i></a></li>
+          <li><a class="github" aria-label="GitHub" href="https://github.com/shivams1164" target="_blank"><i
+                class="fab fa-github"></i></a></li>
+          <li><a class="telegram" aria-label="Telegram" href="https://t.me/shivams_16" target="_blank"><i
+                class="fab fa-telegram-plane"></i></a></li>
+          <li><a class="instagram" aria-label="Instagram" href="https://www.instagram.com/shivams_16"><i
+                class="fab fa-instagram" target="_blank"></i></a></li>
+        </ul>
+      </div>
     </div>
-    <hr>
-    <!-- ABOUT US -->
-    <section id="about-setion">
-        <div class="about-left">
-        </div>
-        <div class="about-right">
-            <h1>About Us</h1>
-            <P>Hello! I'm SHIVAM SINGH, an aspiring web developer with a passion for creating visually appealing and
-                functional websites. I recently completed my studies in Bachelor of Computer Applications and currently
-                pursuing Master of Computer Applications
-                from KIET Group of Institutions. I am excited to kickstart my journey in the world of web development.
-            </P>
-            <br>
-            <div class="address">
-                <ul>
-                    <li>
-                        <span class="address-logo">
-                            <p>Address :- <span>Jaunpur, Uttar Pradesh, India</span></p>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="address-logo">
-                            <br>
-                            <p>Phone No :- <span>+91 9140797852</span></p>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="address-logo">
-                            <br>
-                            <p>Email ID :- <span>shivam1164ss@gmail.com</span></p>
-                        </span>
-                    </li>
-
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <hr>
-    <!-- Skill section start from here-->
-    <section id="Skill-section">
-        <div class="header skill-head">
-            <h1>MY <span>Skills</span></h1>
-            <P>Here is my Skills to represent my Expertise</P>
-        </div>
-        <div class="skill-main">
-            <div class="skill-bar">
-                <div class="info">
-                    <p>HTML</p>
-                    <!-- <P class="percent">95%</P> -->
-                </div>
-                <div class="bar">
-                    <span class="html"></span>
-                </div>
-            </div>
-            <div class="skill-bar">
-                <div class="info">
-                    <p>Css</p>
-                    <!-- <P class="percent">90%</P> -->
-                </div>
-                <div class="bar">
-                    <span class="Css"></span>
-                </div>
-            </div>
-            <div class="skill-bar">
-                <div class="info">
-                    <p>C</p>
-                    <!-- <P class="percent">85%</P> -->
-                </div>
-                <div class="bar">
-                    <span class="C"></span>
-                </div>
-            </div>
-            <div class="skill-bar">
-                <div class="info">
-                    <p>C++</p>
-                    <!-- <P class="percent">65%</P> -->
-                </div>
-                <div class="bar">
-                    <span class="C++"></span>
-                </div>
-            </div>
-            <div class="skill-bar">
-                <div class="info">
-                    <p>JavaScript</p>
-                    <!-- <P class="percent">50%</P> -->
-                </div>
-                <div class="bar">
-                    <span class="js"></span>
-                </div>
-            </div>
-            <div class="skill-bar">
-                <div class="info">
-                    <p>Java</p>
-                    <!-- <P class="percent">70%</P> -->
-                </div>
-                <div class="bar">
-                    <span class="Java"></span>
-                </div>
-            </div>
-        </div>
-    </section>
-    <hr>
-    <!-- Contact Us -->
-    <main id="contact">
-        <div class="contact-heading">
-            <h3>CONTACT ME</h3>
-            <p>Get in Touch</p>
-        </div>
-        <div class="contact-inner">
-            <div class="contact-button">
-                <div class="call-me">
-                    <i class="uil uil-phone-volume"></i>
-                    <div class="name-no">
-                        <h3>Call me</h3>
-                        <p>+91 9140797852</p>
-                    </div>
-                </div>
-                <div class="call-me">
-                    <i class="uil uil-envelope"></i>
-                    <div class="name-no">
-                        <h3>Mail me</h3>
-                        <p>shivams1164@gmail.com</p>
-                    </div>
-                </div>
-                <div class="call-me">
-                    <i class="uil uil-location-point"></i>
-                    <div class="name-no">
-                        <h3>Location</h3>
-                        <p>India</p>
-                    </div>
-                </div>
-            </div>
-            <div class="contact-form">
-                <div class="upper-form">
-                    <input type="text" placeholder="Name" class="name">
-                    <input type="text" placeholder="Email" class="mail">
-                </div>
-                <div class="lower-form">
-                    <input type="text" placeholder="Project" class="project">
-                    <input type="tel" placeholder="Phone" class="project">
-                </div>
-                <textarea name="Message" id="" cols="15" rows="7" placeholder="Message"></textarea>
-                <div class="download-btn">
-                    <button aline>Submit</button>
-
-                </div>
-            </div>
-        </div>
+    <div class="image">
+      <img draggable="false" class="tilt" src="./assets/images/hero.png" alt="">
+    </div>
+  </section>
+  <!-- hero section ends -->
 
 
+  <!-- about section starts -->
+  <section class="about" id="about">
+    <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
+
+    <div class="row">
+
+      <div class="image">
+        <img draggable="false" class="tilt" src="./assets/images/profile2.jpg" alt="">
+      </div>
+      <div class="content">
+        <h3>I'm Shivam</h3>
+        <span class="tag">Full Stack Developer</span>
+
+        <p>I am a Full-Stack developer based in Ghaziabad, India.
+          I am pursuing MCA from KIET Group of Institution.
+          I am very passionate about improving my coding skills & developing applications & websites.
+          Working for myself to improve my skills.
+          Love to build Full-Stack website </p>
+
+        <div class="box-container">
+          <!-- <div class="box">
+              <p><span> age: </span> 20</p>
+              <p><span> phone : </span> +91 XXX-XXX-XXXX</p>
+            </div> -->
+          <div class="box">
+            <p><span> Email : </span> shivam1164ss@gmail.com</p>
+            <p><span>Mobile : </span> +91 9140797852</p>
+          </div>
         </div>
 
-    </main>
+        <div class="resumebtn">
+          <a href="Shivam Resume.pdf" download class="download-cv" style="font-size: large;">Download Resume </a>
+          <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
 
+      </div>
+    </div>
+  </section>
+  <!-- about section ends -->
+
+  <!-- skills section starts -->
+  <section class="skills" id="skills">
+
+    <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
+
+    <div class="container">
+      <div class="row" id="skillsContainer">
+
+        <!-- <div class="bar">
+              <div class="info">
+                <img src="https://img.icons8.com/color/48/000000/adobe-xd.png"/>
+                <span>AdobeXD</span>
+              </div>
+            </div> -->
+
+      </div>
+    </div>
+  </section>
+  <!-- skills section ends -->
+
+
+  <!-- education section starts -->
+  <section class="education" id="education">
+
+    <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
+
+    <p class="qoute">Education is not the learning of facts, but the training of the mind to think.</p>
+
+    <div class="box-container">
+
+      <div class="box">
+        <div class="image">
+          <img draggable="false" src="./assets/images/educat/college.jpg" alt="">
+        </div>
+        <div class="content">
+          <h3>Master of Computer Application</h3>
+          <p>KIET Group of Institution | AKTU Lucknow</p>
+          <h4>2023-2025 | Pursuing</h4>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="image">
+          <img draggable="false" src="./assets/images/educat/school.jpg" alt="">
+        </div>
+        <div class="content">
+          <h3>Bachelor of Computer Applications</h3>
+          <p>Shri Krishna University</p>
+          <h4>2019-2022 | Completed</h4>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- education section ends -->
+
+
+
+
+
+  <!-- contact section starts -->
+  <section class="contact" id="contact">
+
+    <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
+
+    <div class="container">
+      <div class="content">
+        <div class="image-box">
+          <img draggable="false" src="./assets/images/contact1.png" alt="">
+        </div>
+        <form id="contact-form">
+
+          <div class="form-group">
+            <div class="field">
+              <input type="text" name="name" placeholder="Name" required>
+              <i class='fas fa-user'></i>
+            </div>
+            <div class="field">
+              <input type="text" name="email" placeholder="Email" required>
+              <i class='fas fa-envelope'></i>
+            </div>
+            <div class="field">
+              <input type="text" name="phone" placeholder="Phone">
+              <i class='fas fa-phone-alt'></i>
+            </div>
+            <div class="message">
+              <textarea placeholder="Message" name="message" required></textarea>
+              <i class="fas fa-comment-dots"></i>
+            </div>
+          </div>
+          <div class="button-area">
+            <button type="submit">
+              Submit <i class="fa fa-paper-plane"></i></button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- contact section ends -->
+
+
+  <!-- footer section starts -->
+  <section class="footer">
+
+    <div class="box-container">
+
+      <div class="box">
+        <h3>Shivam's Portfolio</h3>
+        <p>Thank you for visiting my personal portfolio website. Connect with me over socials. <br /> <br /> Keep Rising
+          🚀. Connect with me over live chat!</p>
+      </div>
+
+      <div class="box">
+        <h3>quick links</h3>
+        <a href="#home"><i class="fas fa-chevron-circle-right"></i> home</a>
+        <a href="#about"><i class="fas fa-chevron-circle-right"></i> about</a>
+        <a href="#skills"><i class="fas fa-chevron-circle-right"></i> skills</a>
+        <a href="#education"><i class="fas fa-chevron-circle-right"></i> education</a>
+      </div>
+
+      <div class="box">
+        <h3>contact info</h3>
+        <p> <i class="fas fa-phone"></i>+91 9140797852</p>
+        <p> <i class="fas fa-envelope"></i>shivam1164ss@gmail.com</p>
+        <p> <i class="fas fa-map-marked-alt"></i>Ghaziabad Uttar Pradesh</p>
+        <div class="share">
+
+          <a href="https://www.linkedin.com/in/shivams16/" class="fab fa-linkedin" aria-label="LinkedIn"
+            target="_blank"></a>
+          <a href="https://github.com/shivams1164" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
+          <a href="https://t.me/shivams_16" class="fab fa-telegram-plane" aria-label="Telegram" target="_blank"></a>
+          <a class="instagram" aria-label="Instagram" href="https://www.instagram.com/shivams_16"><i
+              class="fab fa-instagram" target="_blank"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a
+        href="https://www.linkedin.com/in/shivams16"> Shivam Singh</a></h1>
+
+  </section>
+  <!-- footer section ends -->
+
+
+  <!-- scroll top btn -->
+  <a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
+  <!-- scroll back to top -->
+
+
+  <!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
+  <!-- jquery cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- typed.js cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"
+    integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- particle.js links -->
+  <script src="./assets/js/particles.min.js"></script>
+  <script src="./assets/js/app.js"></script>
+
+  <!-- vanilla tilt.js links -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"
+    integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- scroll reveal anim -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+  <!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
+
+  <script src="./assets/js/script.js"></script>
 
 </body>
 
