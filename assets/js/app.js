@@ -14,14 +14,14 @@ particlesJS.load('particles-js', 'particles.json', function() {
 particlesJS('particles-js',
   
   {
-    "particles": {
-      "number": {
-        "value": 80,
-        "density": {
-          "enable": true,
-          "value_area": 800
-        }
-      },
+    // "particles": {
+    //   "number": {
+    //     "value": 80,
+    //     "density": {
+    //       "enable": true,
+    //       "value_area": 800
+    //     }
+    //   },
       "color": {
         "value": "#000000"
       },

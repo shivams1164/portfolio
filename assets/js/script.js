@@ -30,12 +30,12 @@ $(document).ready(function () {
     });
 
     // smooth scrolling
-    $('a[href*="#"]').on('click', function (e) {
-        e.preventDefault();
-        $('html, body').animate({
-            scrollTop: $($(this).attr('href')).offset().top,
-        }, 500, 'linear')
-    });
+    // $('a[href*="#"]').on('click', function (e) {
+    //     e.preventDefault();
+    //     $('html, body').animate({
+    //         scrollTop: $($(this).attr('href')).offset().top,
+    //     }, 500, 'linear')
+    // });
 
     // <!-- emailjs to mail contact form data -->
     $("#contact-form").submit(function (event) {
@@ -62,10 +62,10 @@ document.addEventListener('visibilitychange',
             document.title = "Portfolio | Shivam Singh";
             $("#favicon").attr("href", "assets/images/favicon.png");
         }
-        else {
-            document.title = "Come Back To Portfolio";
-            $("#favicon").attr("href", "assets/images/favhand.png");
-        }
+        // else {
+        //     document.title = "Come Back To Portfolio";
+        //     $("#favicon").attr("href", "assets/images/favhand.png");
+        // }
     });
 
 
@@ -134,12 +134,12 @@ function showProjects(projects) {
     // <!-- tilt js effect ends -->
 
     /* ===== SCROLL REVEAL ANIMATION ===== */
-    const srtop = ScrollReveal({
-        origin: 'top',
-        distance: '80px',
-        duration: 1000,
-        reset: true
-    });
+    // const srtop = ScrollReveal({
+    //     origin: 'top',
+    //     distance: '80px',
+    //     duration: 1000,
+    //     reset: true
+    // });
 
     /* SCROLL PROJECTS */
     srtop.reveal('.work .box', { interval: 200 });
@@ -190,26 +190,26 @@ document.onkeydown = function (e) {
     }
 }
 
-// Start of Tawk.to Live Chat
-var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-(function () {
-    var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-    s1.async = true;
-    s1.src = 'https://embed.tawk.to/60df10bf7f4b000ac03ab6a8/1f9jlirg6';
-    s1.charset = 'UTF-8';
-    s1.setAttribute('crossorigin', '*');
-    s0.parentNode.insertBefore(s1, s0);
-})();
-// End of Tawk.to Live Chat
+// // Start of Tawk.to Live Chat
+// var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+// (function () {
+//     var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+//     s1.async = true;
+//     s1.src = 'https://embed.tawk.to/60df10bf7f4b000ac03ab6a8/1f9jlirg6';
+//     s1.charset = 'UTF-8';
+//     s1.setAttribute('crossorigin', '*');
+//     s0.parentNode.insertBefore(s1, s0);
+// })();
+// // End of Tawk.to Live Chat
 
 
 /* ===== SCROLL REVEAL ANIMATION ===== */
-const srtop = ScrollReveal({
-    origin: 'top',
-    distance: '80px',
-    duration: 1000,
-    reset: true
-});
+// const srtop = ScrollReveal({
+//     origin: 'top',
+//     distance: '80px',
+//     duration: 1000,
+//     reset: true
+// });
 
 /* SCROLL HOME */
 srtop.reveal('.home .content h3', { delay: 200 });
